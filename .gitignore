@@ -1,0 +1,30 @@
+# ignore all .class files
+*.class
+
+# ignore bin directory
+bin/
+lib/
+
+# ignore files ending in ~
+*~
+
+# ignore metada files
+.metadata
+
+# ignore project files
+.settings
+
+*.jar
+
+resources/
+*.properties
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
