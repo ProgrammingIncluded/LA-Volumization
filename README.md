@@ -5,3 +5,4 @@ A simple project to attempt to scan real life objects into the computer using di
 ## Required Libraries
 * Python 2.7
 * SimpleCV
+* Sympy

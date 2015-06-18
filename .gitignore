@@ -19,6 +19,9 @@ lib/
 resources/
 *.properties
 
+#Python
+*.pyc
+
 # Emacs
 *~
 \#*\#
