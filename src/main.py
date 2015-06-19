@@ -9,7 +9,7 @@ from DataPoint import DataPoint
 
 test = Snap(2)
 test.addPoint(DataPoint(0, 1, 1))
-test.addPoint(DataPoint(1, 1, 1))
+test.addPoint(DataPoint(1, 1, 1)) 
 slice = BlockSlice(test, test, 90);
 print slice.getAreaTwo() * slice.getAreaOne()
 
