@@ -3,19 +3,13 @@ import pygame
 from SimpleCV import Image, Color, Camera, Display
 from pygame import event
 
-from Snap import Snap
-from Slice import BlockSlice
-from DataPoint import DataPoint
-from Volume import BlockVolume
+from CMDLoader import CMDLoader
 
-test = Snap(2)
-test.addPoint(DataPoint(0, 1, 1))
-test.addPoint(DataPoint(1, 1, 1))
-slice = BlockSlice(test, test, 90)
-volume = BlockVolume()
-volume.addSlice(slice)
+app = CMDLoader()
+app.inputInfo()
+app.displayDataInput()
+app.displayResult()
 
-print volume.calculateVolume()
 
 #cam = Camera()
 #Display object.

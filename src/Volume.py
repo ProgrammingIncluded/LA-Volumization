@@ -52,8 +52,6 @@ class Volume(object):
     def setSlices(self, slices):
         if slices is None:
             return False
-        elif not slices:
-            return False
             
         self._slices = slices
         return True
@@ -82,10 +80,8 @@ class BlockVolume(Volume):
         length = self.findLength(lSlices[0].snapOne.dataPoints)
         dLength = length / (len(lSlices) * 2)
         volume = 0.0
-
         for slice in lSlices:
             volume += (slice.getAreaOne() + slice.getAreaTwo()) * dLength
-
         return volume
         
     def createSlice(self, snapOne, snapTwo, angle):
