@@ -32,6 +32,8 @@ class Slice(object):
     
     # Property Mutators #
     def setAngle(self, angle):
+        if angle is  None:
+            return false
         self._angle = angle
         return True
 
@@ -42,6 +44,8 @@ class Slice(object):
         if self._snapTwo is not None:
             if self._snapTwo.levels != snap.levels:
                 return False
+        else:
+            return False
 
         self._snapOne = snap
         return True
@@ -50,6 +54,9 @@ class Slice(object):
         if self._snapOne is not None:
              if self._snapOne.levels != snap.levels:
                 return False
+        else:
+            return False
+        
         self._snapTwo = snap
         return True
 
