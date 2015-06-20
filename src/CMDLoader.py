@@ -68,9 +68,9 @@ class CMDLoader:
         values = [result.strip() for result in input.split(",")]
         numbers = []
         if len(values) == 2:
-            numbers = [int(values[0]), int(values[1])]
+            numbers = [float(values[0]), float(values[1])]
         elif len(values) == 1:
-            numbers = [int(values[0])]
+            numbers = [float(values[0])]
         else:
             numbers = [0,0,0]
         return numbers

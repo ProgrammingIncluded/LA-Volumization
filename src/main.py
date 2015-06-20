@@ -5,7 +5,10 @@ from pygame import event
 
 from CMDLoader import CMDLoader
 
-app = CMDLoader()
+pictures = raw_input("Pictures Taken: ")
+levels = raw_input("Levels used: ")
+
+app = CMDLoader(int(pictures), int(levels))
 app.inputInfo()
 app.displayDataInput()
 app.displayResult()
